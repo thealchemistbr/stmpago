@@ -5,6 +5,7 @@ Exemplo em C# de como consultar o status de um determinado pagamento no Mercado 
 
 Adicionar um arquivo App.Config com o seguinte formato:
 
+```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
     <startup> 
@@ -15,6 +16,7 @@ Adicionar um arquivo App.Config com o seguinte formato:
     <add key="CLIENT_SECRET" value="" />
   </appSettings>
 </configuration>
+```
 
 As credenciais podem ser obtidas em: https://www.mercadopago.com/mlb/ferramentas/aplicacoes
 
