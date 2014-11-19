@@ -5,13 +5,14 @@ using System.Text;
 using mercadopago;
 using System.Net;
 using System.IO;
+using System.Configuration;
 
 namespace stmpago
 {
     class Program
     {
-        static readonly string _CLIENT_ID = "";
-        static readonly string _CLIENT_SECRET = "";
+        static readonly string _CLIENT_ID = ConfigurationSettings.AppSettings["CLIENT_ID"].ToString();
+        static readonly string _CLIENT_SECRET = ConfigurationSettings.AppSettings["CLIENT_SECRET"].ToString();
 
         static void Main(string[] args)
         {
