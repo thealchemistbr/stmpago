@@ -10,8 +10,8 @@ namespace stmpago
 {
     class Program
     {
-        static readonly string _CLIENT_ID = "3387529031021544";
-        static readonly string _CLIENT_SECRET = "ON3ELvqnODpbUdw5hLktjCUntq5NsX8I";
+        static readonly string _CLIENT_ID = "";
+        static readonly string _CLIENT_SECRET = "";
 
         static void Main(string[] args)
         {
@@ -24,7 +24,7 @@ namespace stmpago
 
             Console.WriteLine("Access Token: {0}", _access_token);
 
-            string _url = "https://api.mercadolibre.com/sandbox/collections/1416402464?access_token=" + _access_token;
+            string _url = "https://api.mercadolibre.com/sandbox/collections/<order_number>?access_token=" + _access_token;
 
             WebRequest req = WebRequest.Create(_url);
 
